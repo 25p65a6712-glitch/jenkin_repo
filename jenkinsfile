@@ -1,1 +1,12 @@
-print(1+9)
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello DevOps'
+            }
+        }
+    }
+}
+
